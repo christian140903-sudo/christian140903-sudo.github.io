@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian B. | Freelance Developer</title>
+    <meta name="description" content="Freelance developer specializing in web scraping, website development, and automation. Hire me on Fiverr.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-bracket">&lt;</span>Christian B.<span class="logo-bracket"> /&gt;</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://www.fiverr.com/bu_christian" target="_blank" rel="noopener" class="btn btn-nav">Hire Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hi, I'm</p>
+                <h1 class="hero-name">Christian B.</h1>
+                <h2 class="hero-title">
+                    <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    I build powerful web scrapers, modern websites, and smart automation tools
+                    that save you time and grow your business.
+                </p>
+                <div class="hero-cta">
+                    <a href="https://www.fiverr.com/bu_christian" target="_blank" rel="noopener" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> Hire Me on Fiverr
+                    </a>
+                    <a href="#portfolio" class="btn btn-outline">
+                        <i class="fas fa-eye"></i> View My Work
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24h</span>
+                        <span class="stat-label">Avg. Response Time</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="code-title">developer.py</span>
+                    </div>
+                    <pre class="code-body"><code><span class="code-keyword">class</span> <span class="code-class">Developer</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(self):
+        self.name = <span class="code-string">"Christian B."</span>
+        self.skills = [
+            <span class="code-string">"Web Scraping"</span>,
+            <span class="code-string">"Web Development"</span>,
+            <span class="code-string">"Automation"</span>
+        ]
+        self.available = <span class="code-bool">True</span>
+
+    <span class="code-keyword">def</span> <span class="code-func">hire_me</span>(self):
+        <span class="code-keyword">return</span> <span class="code-string">"Let's build!"</span> <span class="code-comment"># &gt;&gt;&gt;</span></code></pre>
+                </div>
+            </div>
+        </div>
+        <a href="#services" class="scroll-indicator" aria-label="Scroll down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">What I Do</p>
+                <h2 class="section-title">My Services</h2>
+                <p class="section-subtitle">Specialized solutions tailored to your needs</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spider"></i>
+                    </div>
+                    <h3>Web Scraping & Data Extraction</h3>
+                    <p>Extract valuable data from any website. I build robust, scalable scrapers using Python, BeautifulSoup, Selenium, and APIs to get you the data you need.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> E-commerce price monitoring</li>
+                        <li><i class="fas fa-check"></i> Lead generation & contact extraction</li>
+                        <li><i class="fas fa-check"></i> Real estate & job listing scraping</li>
+                        <li><i class="fas fa-check"></i> API integration & data pipelines</li>
+                    </ul>
+                    <a href="https://www.fiverr.com/bu_christian" target="_blank" rel="noopener" class="btn btn-card">
+                        Get a Quote <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Website Development</h3>
+                    <p>Modern, responsive websites that look great on every device. Clean code, fast loading, SEO-optimized, and built to convert visitors into customers.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Landing pages & portfolios</li>
+                        <li><i class="fas fa-check"></i> Business & e-commerce sites</li>
+                        <li><i class="fas fa-check"></i> Mobile-first responsive design</li>
+                        <li><i class="fas fa-check"></i> SEO optimization & performance</li>
+                    </ul>
+                    <a href="https://www.fiverr.com/bu_christian" target="_blank" rel="noopener" class="btn btn-card">
+                        Get a Quote <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Automation & Bots</h3>
+                    <p>Automate repetitive tasks and build intelligent bots. From Discord and Telegram bots to complex workflow automation -- I make your processes effortless.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Discord & Telegram bots</li>
+                        <li><i class="fas fa-check"></i> Task & workflow automation</li>
+                        <li><i class="fas fa-check"></i> Social media automation</li>
+                        <li><i class="fas fa-check"></i> Custom scripts & tools</li>
+                    </ul>
+                    <a href="https://www.fiverr.com/bu_christian" target="_blank" rel="noopener" class="btn btn-card">
+                        Get a Quote <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">My Work</p>
+                <h2 class="section-title">Recent Projects</h2>
+                <p class="section-subtitle">A selection of projects I've delivered for clients</p>
+            </div>
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://www.fiverr.com/bu_christian" target="_blank" rel="noopener" class="btn btn-small">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Selenium</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <h3>E-Commerce Price Tracker</h3>
+                        <p>Automated scraper monitoring 10,000+ products across 5 major e-commerce platforms. Delivers daily price reports and alerts via email when prices drop below target thresholds.</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://www.fiverr.com/bu_christian" target="_blank" rel="noopener" class="btn btn-small">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        <h3>SaaS Landing Page</h3>
+                        <p>High-converting landing page for a B2B SaaS startup. Fully responsive design with smooth animations, integrated contact forms, and optimized for Core Web Vitals scoring 98+ on PageSpeed.</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://www.fiverr.com/bu_christian" target="_blank" rel="noopener" class="btn btn-small">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Discord.py</span>
+                            <span class="tag">API</span>
+                        </div>
+                        <h3>Discord Community Bot</h3>
+                        <p>Feature-rich Discord bot serving 15,000+ members. Includes moderation tools, custom welcome system, role management, ticket system, and integration with external APIs for real-time notifications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">My Toolkit</p>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">The tools and technologies I work with daily</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Bash</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-spider"></i> Scraping</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">BeautifulSoup</span>
+                        <span class="skill-tag">Selenium</span>
+                        <span class="skill-tag">Scrapy</span>
+                        <span class="skill-tag">Requests</span>
+                        <span class="skill-tag">Playwright</span>
+                        <span class="skill-tag">REST APIs</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-palette"></i> Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">CSS Animations</span>
+                        <span class="skill-tag">Flexbox & Grid</span>
+                        <span class="skill-tag">SEO</span>
+                        <span class="skill-tag">Accessibility</span>
+                        <span class="skill-tag">Performance</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-robot"></i> Automation</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Discord.py</span>
+                        <span class="skill-tag">Telegram Bot API</span>
+                        <span class="skill-tag">Cron Jobs</span>
+                        <span class="skill-tag">Task Scheduling</span>
+                        <span class="skill-tag">Browser Automation</span>
+                        <span class="skill-tag">Email Automation</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Data & Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">SQLite</span>
+                        <span class="skill-tag">JSON/CSV</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">FastAPI</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Postman</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">Client Feedback</p>
+                <h2 class="section-title">What Clients Say</h2>
+                <p class="section-subtitle">Don't just take my word for it</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Christian built exactly what I needed -- a scraper that pulls product data from multiple sites every day. Communication was great, delivery was fast, and the code is clean and well-documented. Already planning the next project with him!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JM</div>
+                        <div class="author-info">
+                            <strong>James Mitchell</strong>
+                            <span>E-Commerce Entrepreneur, USA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Our new landing page looks incredible. Christian took our rough ideas and turned them into a polished, responsive website that loads lightning fast. Conversions went up 40% in the first month. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SR</div>
+                        <div class="author-info">
+                            <strong>Sarah Rodriguez</strong>
+                            <span>Marketing Director, UK</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The Discord bot Christian built for our community is a game-changer. Custom moderation, welcome messages, ticket system -- everything works flawlessly. He even added features we didn't think of. Will definitely work together again!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DK</div>
+                        <div class="author-info">
+                            <strong>Daniel Kim</strong>
+                            <span>Community Manager, Canada</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">Get In Touch</p>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Have a project in mind? I'd love to hear about it.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-briefcase"></i></div>
+                        <div>
+                            <h4>Hire Me</h4>
+                            <p>The best way to start a project is through Fiverr, where you get buyer protection and a streamlined process.</p>
+                            <a href="https://www.fiverr.com/bu_christian" target="_blank" rel="noopener" class="contact-link">
+                                fiverr.com/bu_christian <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4>Response Time</h4>
+                            <p>I typically respond within a few hours. For urgent projects, mention it in your message and I'll prioritize.</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-handshake"></i></div>
+                        <div>
+                            <h4>How I Work</h4>
+                            <p>Clear communication, milestone-based delivery, and revisions until you're 100% satisfied.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta-box">
+                    <div class="cta-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Ready to Start Your Project?</h3>
+                    <p>Tell me about your project on Fiverr and get a custom quote within 24 hours. No commitment required.</p>
+                    <a href="https://www.fiverr.com/bu_christian" target="_blank" rel="noopener" class="btn btn-primary btn-large">
+                        <i class="fas fa-paper-plane"></i> Contact Me on Fiverr
+                    </a>
+                    <div class="cta-features">
+                        <span><i class="fas fa-shield-alt"></i> Buyer Protection</span>
+                        <span><i class="fas fa-undo"></i> Money-Back Guarantee</span>
+                        <span><i class="fas fa-bolt"></i> Fast Delivery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#hero" class="logo">
+                        <span class="logo-bracket">&lt;</span>Christian B.<span class="logo-bracket"> /&gt;</span>
+                    </a>
+                    <p>Freelance Developer specializing in web scraping, website development, and automation.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="https://www.fiverr.com/bu_christian" target="_blank" rel="noopener">Web Scraping</a></li>
+                        <li><a href="https://www.fiverr.com/bu_christian" target="_blank" rel="noopener">Web Development</a></li>
+                        <li><a href="https://www.fiverr.com/bu_christian" target="_blank" rel="noopener">Automation & Bots</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Find Me</h4>
+                    <div class="social-links">
+                        <a href="https://www.fiverr.com/bu_christian" target="_blank" rel="noopener" aria-label="Fiverr" class="social-link">
+                            <i class="fas fa-briefcase"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Christian B. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
