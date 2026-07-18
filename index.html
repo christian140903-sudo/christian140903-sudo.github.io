@@ -6,12 +6,12 @@
   <meta name="theme-color" content="#090a0b">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23090a0b'/%3E%3Cpath d='M44 18a20 20 0 1 0 0 28' fill='none' stroke='%23f0b94c' stroke-width='8'/%3E%3C/svg%3E">
   <title>Christian Bucher — Evidence-first AI systems</title>
-  <meta name="description" content="Christian Bucher builds open systems for AI memory and independently verified outcomes. Explore Soul MCP, Postcondition, NexTool, Anima, and Miguel.">
+  <meta name="description" content="Christian Bucher builds the open trust layer around AI agents: durable memory, outcome verification, executable claims, behavior compatibility, and testable state.">
   <link rel="canonical" href="https://christian140903-sudo.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://christian140903-sudo.github.io/">
   <meta property="og:title" content="Christian Bucher — Evidence-first AI systems">
-  <meta property="og:description" content="Soul remembers why. Postcondition checks what actually changed. Open systems for outcome-verified AI autonomy.">
+  <meta property="og:description" content="Open systems for AI memory, independently verified outcomes, executable evidence, and deterministic behavior compatibility.">
   <meta property="og:image" content="https://christian140903-sudo.github.io/assets/soul-ledger.webp">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="style.css">
@@ -27,7 +27,7 @@
       "https://www.npmjs.com/~mr_bucher003",
       "https://nextool.app"
     ],
-    "knowsAbout": ["Model Context Protocol", "AI systems", "outcome verification", "agent governance", "automation", "multi-model orchestration"]
+    "knowsAbout": ["Model Context Protocol", "AI systems", "outcome verification", "executable evidence", "behavior compatibility", "agent governance", "multi-model orchestration"]
   }
   </script>
 </head>
@@ -47,11 +47,11 @@
     <section class="hero section" id="top" aria-labelledby="hero-title">
       <div class="hero-copy reveal">
         <p class="eyebrow"><span>Vienna, Austria</span><span>Open source systems</span></p>
-        <h1 id="hero-title">I build systems that give AI <em>memory</em>, tools, and proof of outcome.</h1>
-        <p class="lede">Soul remembers why. Postcondition checks whether the outside world actually changed. Together they form a trust layer for AI that acts.</p>
+        <h1 id="hero-title">I build the <em>trust layer</em> around AI agents.</h1>
+        <p class="lede">Memory with provenance. Outcomes observed independently. Claims backed by executable evidence. Behavior kept stable across model and prompt changes.</p>
         <div class="actions">
           <a class="button button-primary" href="https://github.com/christian140903-sudo/soul-mcp">Explore Soul MCP <span aria-hidden="true">→</span></a>
-          <a class="text-link" href="#proof">View the evidence <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="#systems">Explore the full stack <span aria-hidden="true">↓</span></a>
         </div>
         <p class="ownership">AI-assisted. Architecture, verification, and release decisions owned by Christian Bucher.</p>
       </div>
@@ -64,22 +64,30 @@
         </div>
       </div>
 
-      <div class="proof-rail reveal" id="proof" role="group" aria-label="Project evidence">
+      <div class="proof-rail reveal" id="proof" role="group" aria-label="Public project evidence">
         <a href="https://github.com/christian140903-sudo/soul-mcp">
           <span class="proof-label">Soul 4.0.1</span>
           <strong>358 tests</strong>
         </a>
-        <a href="https://nextool.app">
-          <span class="proof-label">NexTool</span>
-          <strong>260+ tools</strong>
+        <a href="https://github.com/christian140903-sudo/postcondition-mcp">
+          <span class="proof-label">Postcondition</span>
+          <strong>53 tests</strong>
+        </a>
+        <a href="https://github.com/christian140903-sudo/proofspec">
+          <span class="proof-label">Proofspec</span>
+          <strong>70 tests</strong>
+        </a>
+        <a href="https://github.com/christian140903-sudo/behaviorlock">
+          <span class="proof-label">Behaviorlock</span>
+          <strong>73 tests</strong>
+        </a>
+        <a href="https://github.com/christian140903-sudo/agent-invariants">
+          <span class="proof-label">Agent Invariants</span>
+          <strong>36 tests</strong>
         </a>
         <a href="https://github.com/christian140903-sudo/anima">
-          <span class="proof-label">Anima</span>
+          <span class="proof-label">ANIMA</span>
           <strong>446 tests</strong>
-        </a>
-        <a href="https://github.com/christian140903-sudo/postcondition-mcp">
-          <span class="proof-label">Postcondition 0.1</span>
-          <strong>53 tests</strong>
         </a>
       </div>
     </section>
@@ -161,22 +169,40 @@
 
       <div class="system-list reveal">
         <article>
-          <p class="system-index">03 / Public</p>
-          <h3><a href="https://nextool.app">NexTool <span aria-hidden="true">↗</span></a></h3>
-          <p>260+ browser tools and 132 technical articles in a practical, searchable library.</p>
-          <strong>Live product</strong>
+          <p class="system-index">03 / Evidence contracts</p>
+          <h3><a href="https://github.com/christian140903-sudo/proofspec">Proofspec <span aria-hidden="true">↗</span></a></h3>
+          <p>Turns README, release, and product claims into versioned evidence contracts, constrained checks, receipts, and CI gates.</p>
+          <strong>70 tests · 98.05%</strong>
         </article>
         <article>
-          <p class="system-index">04 / Public source</p>
-          <h3><a href="https://github.com/christian140903-sudo/anima">Anima <span aria-hidden="true">↗</span></a></h3>
-          <p>A Python kernel for testable system logic, regressions, and behavioral guarantees.</p>
-          <strong>446 tests</strong>
+          <p class="system-index">04 / Compatibility gate</p>
+          <h3><a href="https://github.com/christian140903-sudo/behaviorlock">Behaviorlock <span aria-hidden="true">↗</span></a></h3>
+          <p>Deterministically compares recorded agent traces and keeps declared behavior stable across model, prompt, memory, policy, and tool changes.</p>
+          <strong>73 tests · 9 matchers</strong>
+        </article>
+        <article>
+          <p class="system-index">05 / Operating contracts</p>
+          <h3><a href="https://github.com/christian140903-sudo/agent-invariants">Agent Invariants <span aria-hidden="true">↗</span></a></h3>
+          <p>Checks explicit approval, stop, scope, recovery, tool-use, and completion rules over normalized agent event traces.</p>
+          <strong>36 tests · source release</strong>
+        </article>
+        <article>
+          <p class="system-index">06 / Stateful agents</p>
+          <h3><a href="https://github.com/christian140903-sudo/anima">ANIMA <span aria-hidden="true">↗</span></a></h3>
+          <p>A zero-dependency Python cognitive-state engine with durable state, associative memory, temporal context, model adapters, and ablation tooling.</p>
+          <strong>446 tests · experimental</strong>
+        </article>
+        <article>
+          <p class="system-index">07 / Discovery layer</p>
+          <h3><a href="https://nextool.app">NexTool <span aria-hidden="true">↗</span></a></h3>
+          <p>A fast, searchable library of private browser utilities and practical technical guides—with dedicated launch pages for the trust stack.</p>
+          <strong>269 tools · 131 guides</strong>
         </article>
         <article id="miguel">
-          <p class="system-index">05 / System case study</p>
-          <h3>Miguel</h3>
-          <p>A personal AI operating layer connecting memory, voice, models, tools, and remote execution.</p>
-          <strong>128 API endpoints</strong>
+          <p class="system-index">08 / Origin system</p>
+          <h3>Miguel / Soul 4</h3>
+          <p>The private personal-AI system from which the public memory, verification, evidence, and compatibility layers were extracted and hardened.</p>
+          <strong>Private system · public primitives</strong>
         </article>
       </div>
 
@@ -213,7 +239,7 @@
 
       <div class="principle reveal">
         <p>AI can accelerate the work. <strong>Ownership, testing, and release decisions stay human.</strong></p>
-        <p>Soul preserves <em>why</em> a decision exists. Postcondition checks <em>whether</em> its intended result exists. Each verified outcome becomes part of the next better decision.</p>
+        <p>Soul preserves <em>why</em>. Postcondition checks <em>whether</em> the intended result exists. Proofspec binds public claims to evidence. Behaviorlock and Agent Invariants protect observable behavior. Each verified outcome becomes part of the next better decision.</p>
       </div>
     </section>
 
@@ -221,13 +247,13 @@
       <div class="contact-copy reveal">
         <p class="section-label">03 / Open source &amp; collaboration</p>
         <h2 id="contact-title">Build with evidence.</h2>
-        <p>Explore the systems, inspect the code, or add the memory and outcome layers to an MCP client.</p>
+        <p>Explore the systems, inspect every trust boundary, or add the published memory and outcome layers to an MCP client.</p>
         <div class="actions">
           <a class="button button-primary" href="https://www.npmjs.com/package/soul-mcp">Install Soul MCP <span aria-hidden="true">→</span></a>
           <a class="text-link" href="https://www.npmjs.com/package/postcondition-mcp">Install Postcondition <span aria-hidden="true">↗</span></a>
           <a class="text-link" href="https://github.com/christian140903-sudo">GitHub <span aria-hidden="true">↗</span></a>
           <a class="text-link" href="https://www.npmjs.com/~mr_bucher003">npm <span aria-hidden="true">↗</span></a>
-          <a class="text-link" href="mailto:christian140903@gmail.com">Email <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="mailto:hello@nextool.app">Email <span aria-hidden="true">↗</span></a>
         </div>
       </div>
 
@@ -239,7 +265,7 @@
         <code>8a9b0c1d&nbsp; 2e3f4a5b&nbsp; 6c7d8e9f</code>
       </div>
 
-      <p class="reservoir reveal"><span aria-hidden="true">&gt;_</span> <strong>Next from the reservoir:</strong> behavioural drift tests, claim-to-evidence CI, model routing, and verified learning content — promoted only when the evidence is ready.</p>
+      <p class="reservoir reveal"><span aria-hidden="true">&gt;_</span> <strong>Next from the reservoir:</strong> confidence calibration, recovery contracts, model routing, and verified learning loops — promoted only when the evidence is ready.</p>
     </section>
   </main>
 
