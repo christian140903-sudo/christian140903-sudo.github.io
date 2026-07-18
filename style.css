@@ -101,7 +101,7 @@ h1 em, h2 em { color: var(--amber); font-style: normal; }
 .visual-status { position: absolute; z-index: 2; right: 1rem; bottom: 1rem; left: 1rem; display: flex; justify-content: space-between; border-top: 1px solid var(--line); padding-top: .7rem; color: var(--faint); font-size: .7rem; }
 .visual-status .verified { color: var(--cyan); }
 
-.proof-rail { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(4, 1fr); margin-top: clamp(1rem, 3vw, 3rem); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.proof-rail { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(6, 1fr); margin-top: clamp(1rem, 3vw, 3rem); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .proof-rail a { display: flex; flex-direction: column; gap: .25rem; padding: 1rem clamp(.7rem, 2vw, 1.8rem); text-decoration: none; }
 .proof-rail a + a { border-left: 1px solid var(--line); }
 .proof-rail a:hover { background: var(--surface); }
@@ -213,6 +213,9 @@ h1 em, h2 em { color: var(--amber); font-style: normal; }
   .hero { padding-top: 5rem; }
   .hero-visual { min-height: 20rem; }
   .hero-visual img { min-height: 20rem; }
+  .proof-rail { grid-template-columns: repeat(3, 1fr); }
+  .proof-rail a:nth-child(4) { border-top: 1px solid var(--line); border-left: 0; }
+  .proof-rail a:nth-child(5), .proof-rail a:nth-child(6) { border-top: 1px solid var(--line); }
   .system-list article { grid-template-columns: .65fr 1fr 1.5fr; }
   .system-list article > strong { grid-column: 2; }
   .process { grid-template-columns: 1fr 1fr; gap: 2.5rem 1rem; }
@@ -231,8 +234,8 @@ h1 em, h2 em { color: var(--amber); font-style: normal; }
   h1 { font-size: clamp(2.8rem, 13vw, 4.2rem); }
   .hero { min-height: auto; }
   .proof-rail { grid-template-columns: 1fr 1fr; }
-  .proof-rail a:nth-child(3) { border-left: 0; border-top: 1px solid var(--line); }
-  .proof-rail a:nth-child(4) { border-top: 1px solid var(--line); }
+  .proof-rail a:nth-child(odd):not(:first-child) { border-left: 0; }
+  .proof-rail a:nth-child(n+3) { border-top: 1px solid var(--line); }
   .metrics { grid-template-columns: 1fr 1fr; }
   .metrics li:nth-child(3) { border-top: 1px solid var(--line); border-left: 0; }
   .metrics li:nth-child(4) { border-top: 1px solid var(--line); }
